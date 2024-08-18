@@ -94,7 +94,7 @@ if (isset($_POST['check-email'])) {
         if ($run_query) {
             $subject = "Password Reset Code";
             $message = "Your password reset code is $code";
-            $sender = "From: riteshbgmisingh@gmail.com";
+            $sender = "From: xyz@gmail.com";
             $headers = "MIME-Version: 1.0" . "\r\n";
             $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
             $headers .= 'From: <riteshbgmisingh@gmail.com>' . "\r\n";
