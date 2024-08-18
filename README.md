@@ -1,7 +1,7 @@
 # codek
 ## Requirements
-+..............+
-1. Xamp server. Dowloade it from https://www.apachefriends.org/download.html . 
+1. Xamp server. 
+     - > Dowloade it from https://www.apachefriends.org/download.html . 
 
 ## How to run : - 
 
