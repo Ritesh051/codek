@@ -15,7 +15,8 @@ Basic admin + user Login page website ...  Using `PhP`and `MySQl` server.
 ## Changes to be made in code by you 
 1. Change your table name in the `Queries` forex. SELECT * FROM Dbname WHERE email = '$email' in this change `Dbname` to your Table name. 
 2. Make these changes in every file. 
-3. In this replace with your `secret-key`->>  `$secretkey = "your secret-key"`;  //get your secret-key from https://www.google.com/recaptcha/about/, you can create your key and PASTE it here.
+3. In this replace with your `secret-key`->>  `$secretkey = "your secret-key"`;
+4. get your secret-key from https://www.google.com/recaptcha/about/, you can create your key and PASTE it here.
 
 
 ###  YOUR WEBSITE IS LIVE NOW :). 
