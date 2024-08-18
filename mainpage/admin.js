@@ -14,9 +14,12 @@ closeBtn.addEventListener('click', () => {
 });
 
 // Toggle theme
-themeToggler.addEventListener('click', () => {
-    document.body.classList.toggle('dark-theme-variables');
-    const spans = themeToggler.querySelectorAll('span');
-    spans[0].classList.toggle('active');
-    spans[1].classList.toggle('active');
+setTimeout(() => {
+    
+    themeToggler.addEventListener('click', () => {
+        document.body.classList.toggle('dark-theme-variables');
+        const spans = themeToggler.querySelectorAll('span');
+        spans[0].classList.toggle('active');
+        spans[1].classList.toggle('active');
+    },80);
 });

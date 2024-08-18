@@ -19,9 +19,9 @@ if (isset($_POST['change-password'])) {
         $errors['password'] = "Confirm password does not match!";
     } else {
         $encpass = password_hash($password, PASSWORD_BCRYPT);
-        $update_pass = "UPDATE Login_DB SET code = 0, password = '$encpass' WHERE email = '$email'";
+        $update_pass = "UPDATE Dbname SET code = 0, password = '$encpass' WHERE email = '$email'";
         if (mysqli_query($conn, $update_pass)) {
-            $_SESSION['info'] = "Your password has been changed. You can now log in.";
+            $_SESSION['info'] = "Your password has been changed. You can now login.";
             header('Location: ../main page/password-changed.php');
             exit();
         } else {

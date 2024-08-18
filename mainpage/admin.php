@@ -38,7 +38,6 @@ if(!isset($_SESSION['admin_name'])){
         <aside>
             <div class="top">
                 <div class="logo">
-                    <!--<img src="../images/Logo.png" alt="">-->
                     <h2>COD<span class="primary">EK</span></h2>
                 </div>
                 <div class="close" id="close-btn">

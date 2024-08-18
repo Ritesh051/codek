@@ -7,8 +7,6 @@ if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
 function addAnimation() {
   scrollers.forEach((scroller) => {
     scroller.setAttribute("data-animated", true);
-
-
     const scrollerInner = scroller.querySelector(".inner_scroll");
     const scrollerContent = Array.from(scrollerInner.children);
     scrollerContent.forEach((item) => {

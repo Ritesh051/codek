@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['check-email'])) {
     if (empty($email)) {
         $errors[] = "Email address is required.";
     } else {
-        $query = "SELECT * FROM Login_DB WHERE email='$email'";
+        $query = "SELECT * FROM Dbname WHERE email='$email'";
         $result = mysqli_query($conn, $query);
 
         if (mysqli_num_rows($result) == 0) {

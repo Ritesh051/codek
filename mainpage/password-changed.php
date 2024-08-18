@@ -23,10 +23,9 @@ if (!isset($_SESSION['info'])) {
         <div class="row">
             <div class="col-md-4 offset-md-4 form login-form">
                 <?php 
-                // Display success message
                 if (isset($_SESSION['info'])) {
                     echo '<div class="alert alert-success text-center">' . $_SESSION['info'] . '</div>';
-                    unset($_SESSION['info']); // Clear info after displaying
+                    unset($_SESSION['info']);
                 }
                 ?>
                 <form action="../main page/login.php" method="POST">

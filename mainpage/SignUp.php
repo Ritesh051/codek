@@ -16,9 +16,9 @@ if (isset($_POST['submit'])) {
     $cpass = md5($_POST['cpassword']);
     $user_type = $_POST['user_type'];
     $code = rand(999999, 111111);
-    $status = "notverified";
+    $status = "NotVerified";
 
-    $select = "SELECT * FROM Login_DB WHERE email = '$email'";
+    $select = "SELECT * FROM Dbname WHERE email = '$email'";
     $result = mysqli_query($conn, $select);
 
     if (mysqli_num_rows($result) > 0) {
@@ -27,7 +27,7 @@ if (isset($_POST['submit'])) {
         if ($pass != $cpass) {
             $error[] = 'Passwords do not match!';
         } else {
-            $insert = "INSERT INTO Login_DB(name, email, password, user_type, code, status) VALUES('$name','$email','$pass','$user_type', '$code', '$status')";
+            $insert = "INSERT INTO Dbname(name, email, password, user_type, code, status) VALUES('$name','$email','$pass','$user_type', '$code', '$status')";
             if (mysqli_query($conn, $insert)) {
                 header('location:../main page/login.php');
                 exit();
