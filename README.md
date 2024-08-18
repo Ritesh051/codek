@@ -13,10 +13,9 @@ Basic admin + user Login page website ...  Using `PhP`and `MySQl` server.
 4. To run the code, Open your browser and enter `http://localhost/Codek/mainpage/index.php`.
 
 ## Changes to be made in code by you 
-- > 1. Change your table name in the `Queries` for ex. SELECT * FROM Dbname WHERE email = '$email' in this change `Dbname` to your Table name. 
-- > 2. Make these changes in every file. 
-- > 3. In this replace with your `secret-key`->>  `$secretkey = "your secret-key"`;  //get your secret-key from https://www.google.com/recaptcha/about/, you can create your key and PASTE it here.
-- > 
+1. Change your table name in the `Queries` forex. SELECT * FROM Dbname WHERE email = '$email' in this change `Dbname` to your Table name. 
+2. Make these changes in every file. 
+3. In this replace with your `secret-key`->>  `$secretkey = "your secret-key"`;  //get your secret-key from https://www.google.com/recaptcha/about/, you can create your key and PASTE it here.
 
 
 ###  YOUR WEBSITE IS LIVE NOW :). 
